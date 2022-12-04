@@ -121,10 +121,10 @@ func (r *response) parseLabels() prometheus.Labels {
 	l["station_id"] = strconv.Itoa(r.StationId)
 	l["station_name"] = r.StationName
 	l["public_name"] = r.PublicName
-	l["latitude"] = strconv.FormatFloat(r.Latitude, 'E', -1, 64)
-	l["longitude"] = strconv.FormatFloat(r.Longitude, 'E', -1, 64)
-	l["timezone"] = r.Timezone
-	l["elevation"] = strconv.FormatFloat(r.Elevation, 'E', -1, 64)
+	// l["latitude"] = strconv.FormatFloat(r.Latitude, 'E', -1, 64)
+	// l["longitude"] = strconv.FormatFloat(r.Longitude, 'E', -1, 64)
+	// l["timezone"] = r.Timezone
+	// l["elevation"] = strconv.FormatFloat(r.Elevation, 'E', -1, 64)
 	return l
 }
 
